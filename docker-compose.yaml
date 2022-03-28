@@ -32,3 +32,9 @@ services:
       ADMINER_PLUGINS: tables-filter tinymce
     ports:
       - 54320:8080
+  mailhog:
+    image: mailhog/mailhog:latest
+    restart: always
+    ports:
+      - 1025:1025
+      - 8025:8025    
